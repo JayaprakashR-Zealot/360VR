@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/new_bg_2" >
+
+
+
+    <WebView
+        android:id="@+id/webView_panoramaImage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:id="@+id/vr_image_name"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:padding="6dp"
+            android:background="#99000000"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:text="Tourism VR"
+            android:textSize="14sp"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/img_btn_panoImage_close"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@drawable/panorama_close"/>
+    </FrameLayout>
+
+   <!-- <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/img_btn_panoImage_close"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/panorama_close"/>-->
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        android:id="@+id/img_btn_prev_panoImage"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_new_prev"/>
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        android:id="@+id/img_btn_next_panoImage"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+
+        android:background="@drawable/ic_new_next"/>
+
+
+
+</RelativeLayout>

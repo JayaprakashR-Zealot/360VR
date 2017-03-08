@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Art of living - River rejuvenation project</string>
+
+    <string name="app_name_pano">VR Video and cardboard</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+</resources>

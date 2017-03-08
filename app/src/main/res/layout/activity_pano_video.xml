@@ -1,0 +1,174 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framecontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg_2"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/app_header"
+            >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:text="360° Videos"
+                android:id="@+id/txt360Videos"
+                android:layout_centerHorizontal="true"
+                android:gravity="left|center"
+                android:textSize="20sp"
+                android:background="#ffce19"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:id="@+id/vr_video_name"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:padding="6dp"
+                android:background="#99000000"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
+                android:text="Tourism VR"
+                android:visibility="gone"
+                android:textSize="14sp"/>
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/img_btn_panoVideo_close"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:background="@drawable/panorama_close"/>
+        </FrameLayout>
+        <ListView
+            android:id="@+id/listview_pano_video_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#b9b9b9"
+            android:dividerHeight="0.3dp"
+            android:layout_below="@+id/app_header"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            />
+
+        <!--<AbsoluteLayout
+            android:id="@+id/AbsoluteLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtAppName"
+            >
+
+
+
+            <ListView
+                android:id="@+id/listview_pano_video_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="#b9b9b9"
+                android:dividerHeight="0.3dp"
+                />
+
+        </AbsoluteLayout>-->
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/stopbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/playbutton"
+            android:background="#AA000000"
+            android:paddingBottom="7dp"
+            android:text="←"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:visibility="gone"
+            android:width="80dp" />
+
+        <Button
+            android:id="@+id/touchbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/scrubber"
+            android:layout_marginLeft="1dp"
+            android:background="#AA000000"
+            android:text="motion"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:width="80dp" />
+
+        <Button
+            android:id="@+id/playbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/scrubber"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/stopbutton"
+            android:background="#AA000000"
+            android:text="play"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:width="80dp" />
+
+        <SeekBar
+            android:id="@+id/scrubber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="1dip"
+            android:layout_toLeftOf="@+id/touchbutton"
+            android:layout_toRightOf="@+id/playbutton"
+            android:background="#AA000000"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingTop="6dp" />
+
+        <EditText
+            android:id="@+id/intro"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/playbutton"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:freezesText="true"
+            android:inputType="textMultiLine"
+            android:text="Please add 360 degree movies by uploading them to your external storage. Use either a flash card or Android File Transfer to populate your system with movies. The movie files that will show up here, are all the movies on the external storage, including regular ones. Please use videos appropriate for your device."
+            android:textColor="#fff" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+</FrameLayout>
